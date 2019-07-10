@@ -53,5 +53,7 @@ end
 
 def winner(board)
   winningcombo = won?(board)
-  board[winningcombo[0]]
+    if won?(board)
+      board[winningcombo[0]]
+    end
 end
